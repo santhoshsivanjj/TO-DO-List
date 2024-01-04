@@ -1,0 +1,52 @@
+@import '../variables/variables.scss';
+
+.TaskBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    font-family: $RubikLite;
+    font-size: large;
+    margin: 20px 0px;
+}
+.TaskTitle{ 
+    padding-left: 20px;
+}
+
+.Icon{
+    padding: 20px 10px;
+}
+
+.TaskList{
+    position: relative;
+    left: 220px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: $Todo;
+}
+
+.TaskListComplete{
+    position: relative;
+    left: 220px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: $Completed;
+}
+
+.DeleteButton{
+    background-color: $darkblue;
+    padding: 6px 25px;
+    border-radius: 5px;
+    border: solid 1px black;
+    color: $LiteBlue;
+    margin: 20px;
+    font-family: $RubikLite;
+    font-size: large;
+    cursor: pointer;
+}
+
+.Icon input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
+.TaskBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Rubik";
+  font-size: large;
+  margin: 20px 0px;
+}
+
+.TaskTitle {
+  padding-left: 20px;
+}
+
+.Icon {
+  padding: 20px 10px;
+}
+
+.TaskList {
+  position: relative;
+  left: 220px;
+  width: 600px;
+  border-radius: 10px;
+  background-color: #5D8AA8;
+}
+
+.TaskListComplete {
+  position: relative;
+  left: 220px;
+  width: 600px;
+  border-radius: 10px;
+  background-color: #AFDBF5;
+}
+
+.DeleteButton {
+  background-color: #002244;
+  padding: 6px 25px;
+  border-radius: 5px;
+  border: solid 1px black;
+  color: #E1EBEE;
+  margin: 20px;
+  font-family: "Rubik";
+  font-size: large;
+  cursor: pointer;
+}
+
+.Icon input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}/*# sourceMappingURL=TodoItem.css.map */

@@ -1,0 +1,18 @@
+@import '../variables/variables.scss';
+
+.CompleteBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+}
+
+.TotalComplete{
+    background-color: $Completed;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    font-family: $RubikLite;
+    width: 300px;
+    border-radius: 10px;
+}

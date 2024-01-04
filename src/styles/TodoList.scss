@@ -1,0 +1,12 @@
+@import '../variables/variables.scss';
+
+.Box{
+    background-color: $LiteBlue;
+    padding: 50px;
+    border-radius: 15px;
+    margin: 100px;
+}
+h3{
+    font-family: $RubikLite;
+    font-size: xx-large;
+}
