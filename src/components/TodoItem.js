@@ -29,12 +29,12 @@ const TodoItem = ({ id, title, completed }) => {
   return (
     <div className={`TaskList ${completed ? 'TaskListComplete' : ''}`}>
       <div className='TaskBox'>
-        <span className='Icon'>
-          <input
+      <input
             type='checkbox'
             onChange={handleCompleteClick}
             checked={completed}
           />
+        <span className='Icon'>
           {title}
         </span>
           <div className='Buttons'>
