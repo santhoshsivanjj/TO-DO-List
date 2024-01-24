@@ -1,6 +1,6 @@
 import React from 'react';
 import TodoItem from './TodoItem';
-import '../styles/todolist.css'
+import '../styles/TodoList.scss'
 import { useSelector } from 'react-redux';
 
 const TodoList = () => {

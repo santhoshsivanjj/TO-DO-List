@@ -1,7 +1,7 @@
 // TodoItem.js
 
 import React, { useState } from 'react';
-import '../styles/TodoItem.css';
+import '../styles/TodoItem.scss';
 import { useDispatch } from 'react-redux';
 import { deleteTodo, toggleComplete } from '../redux/todoSlice';
 import UpdateTodoForm from './UpdateTodoForm'; // Import the new component
@@ -32,20 +32,21 @@ const TodoItem = ({ id, title, completed }) => {
         <span className='Icon'>
           <input
             type='checkbox'
-            className='mr-3'
             onChange={handleCompleteClick}
             checked={completed}
           />
           {title}
         </span>
-        {!isUpdateFormOpen && (
-        <button onClick={handleUpdateClick} className='UpdateButton'>Update</button>
-        )}
-        <button onClick={handleDeleteClick} className='DeleteButton'>Delete</button>
+          <div className='Buttons'>
+            {!isUpdateFormOpen && (
+            <button onClick={handleUpdateClick} className='UpdateButton'>Update</button>
+            )}
+            <button onClick={handleDeleteClick} className='DeleteButton'>Delete</button>
+          </div>
       </div>
-      {isUpdateFormOpen && (
-        <UpdateTodoForm id={id} currentTitle={title} onClose={handleCloseUpdateForm} />
-      )}
+        {isUpdateFormOpen && (
+          <UpdateTodoForm id={id} currentTitle={title} onClose={handleCloseUpdateForm} />
+        )}
     </div>
   );
 };

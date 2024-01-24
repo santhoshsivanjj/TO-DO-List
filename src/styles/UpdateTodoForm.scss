@@ -35,4 +35,16 @@
     font-family: $RubikLite;
     font-size: large;
     cursor: pointer;
+
+    &:hover {
+        background-color: $LiteBlue;
+        color: $darkblue;
+    }
+}
+
+.Update{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3%;
 }

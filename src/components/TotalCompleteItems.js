@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/TotalCompleteItems.css'
+import '../styles/TotalCompleteItems.scss'
 import { useSelector } from 'react-redux';
 
 const TotalCompleteItems = () => {
@@ -10,7 +10,7 @@ const TotalCompleteItems = () => {
 
 	return(
 		<div className='CompleteBox'>
-			<h4 className='TotalComplete'>Total Complete Items: {CompletedTodo.length}</h4>
+			<h4 className='TotalComplete'>Total Completed Items: {CompletedTodo.length}</h4>
 		</div>
 	);
 };

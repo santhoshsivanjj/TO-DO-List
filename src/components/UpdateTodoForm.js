@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { updateTodo } from '../redux/todoSlice';
-import '../styles/UpdateTodoForm.css'
+import '../styles/UpdateTodoForm.scss'
 
 const UpdateTodoForm = ({ id, currentTitle, onClose }) => {
   const [newTitle, setNewTitle] = useState(currentTitle);
@@ -22,14 +22,18 @@ const UpdateTodoForm = ({ id, currentTitle, onClose }) => {
 
   return (
     <form className='Update' onSubmit={handleSubmit}>
-      <label className='UpdateLabel' htmlFor={`updateTodo-${id}`}>Update Task: </label>
-      <input className='UpdateInput'
-        type='text'
-        id={`updateTodo-${id}`}
-        value={newTitle}
-        onChange={(e) => setNewTitle(e.target.value)}
-      />
-      <button className='UpdateButton' type='submit'>Update</button>
+      <div className='UptLab'>
+        <label className='UpdateLabel' htmlFor={`updateTodo-${id}`}>Update Task: </label>
+        <input className='UpdateInput'
+          type='text'
+          id={`updateTodo-${id}`}
+          value={newTitle}
+          onChange={(e) => setNewTitle(e.target.value)}
+        />
+      </div>
+      <div>
+        <button className='UpdateButton' type='submit'>Update</button>
+      </div>  
     </form>
   );
 };

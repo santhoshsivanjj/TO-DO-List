@@ -1,52 +1,56 @@
+// TodoItem.scss
+
 @import '../variables/variables.scss';
 
-.TaskBox{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-    font-family: $RubikLite;
-    font-size: large;
-    margin: 20px 0px;
-}
-.TaskTitle{ 
-    padding-left: 20px;
+.TaskList {
+  max-width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: $Todo; // Update with your color variable
 }
 
-.Icon{
-    padding: 20px 10px;
+.TaskListComplete {
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: $Completed; // Update with your color variable
 }
 
-.TaskList{
-    position: relative;
-    left: 220px;
-    width: 600px;
-    border-radius: 10px;
-    background-color: $Todo;
+.TaskBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Rubik";
+  font-size: large;
+  margin: 2% 3%;
 }
 
-.TaskListComplete{
-    position: relative;
-    left: 220px;
-    width: 600px;
-    border-radius: 10px;
-    background-color: $Completed;
-}
+.Icon {
+  padding: 20px 10px;
 
-.DeleteButton{
-    background-color: $darkblue;
-    padding: 6px 25px;
-    border-radius: 5px;
-    border: solid 1px black;
-    color: $LiteBlue;
-    margin: 20px;
-    font-family: $RubikLite;
-    font-size: large;
-    cursor: pointer;
-}
-
-.Icon input[type="checkbox"] {
+  input[type="checkbox"] {
     width: 20px;
     height: 20px;
     margin: 10px;
+  }
+}
+
+.DeleteButton,
+.UpdateButton {
+  padding: 6px 25px;
+  border-radius: 5px;
+  border: solid 1px black;
+  font-family: $RubikLite;
+  font-size: large;
+  cursor: pointer;
+}
+
+.DeleteButton {
+  background-color: $darkblue;
+  color: $LiteBlue; 
+  margin: 20px;
+  &:hover {
+    background-color: $LiteBlue;
+    color: $darkblue;
+}
 }

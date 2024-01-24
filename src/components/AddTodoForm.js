@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTodo } from '../redux/todoSlice';
-import '../styles/AddTodoForm.css'
+import '../styles/AddTodoForm.scss'
 
 const AddTodoForm = () => {
 	const [value, setValue] = useState('');
